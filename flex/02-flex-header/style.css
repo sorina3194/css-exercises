@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
 }
 
 .logo {
@@ -8,7 +12,40 @@
   font-weight: 900;
   color: tomato;
   background: white;
-  padding: 4px 32px;
+  padding: 4px 0px;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left-links{
+  display:flex;
+  flex:1;
+}
+
+.left-links > ul {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-start;
+  padding: 0%;
+  margin: 0%;
+  gap: 8px;
+}
+
+.right-links{
+  display:flex;
+  flex:1;
+}
+.right-links > ul{
+  display:flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 0%;
+  margin: 0%;
 }
 
 ul {
